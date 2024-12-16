@@ -48,7 +48,7 @@
     @include('layouts.partials.header')
     
     <main>
-      {{-- {{$slot}} --}}
+      {{$slot}}
     </main>
 
     @include('layouts.partials.footer')
