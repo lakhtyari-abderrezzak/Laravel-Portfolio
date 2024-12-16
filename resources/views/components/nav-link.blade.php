@@ -1,4 +1,4 @@
-@props(['active'])
+@props(['active', 'navigate'])
 
 @php
 $classes = ($active ?? false)
@@ -6,6 +6,6 @@ $classes = ($active ?? false)
             : '';
 @endphp
 
-<a class="nav-link" {{ $attributes->merge(['class' => $classes]) }}>
+<a {{ $navigate ?? true ? 'wire:navigate' : '' }} class="nav-link" {{ $attributes->merge(['class' => $classes]) }}>
     {{ $slot }}
 </a>

@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('layouts.app');
-});
+})->name('home');
 
 Route::middleware([
     'auth:sanctum',

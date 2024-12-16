@@ -5,7 +5,7 @@
     >
       <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
+          ><x-application-logo /></a
         >
         <button
           class="nav-menu d-md-none"
