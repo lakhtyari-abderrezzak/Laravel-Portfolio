@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/home', function () {
-    return view('layouts.app');
+    return view('index');
 })->name('home');
 
 Route::middleware([
