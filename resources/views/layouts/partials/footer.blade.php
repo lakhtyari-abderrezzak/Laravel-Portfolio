@@ -1,7 +1,7 @@
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
         <h3 class="pt-4" data-aos="fade-up"> <x-application-logo /> </h3>
-        <div class="link-group mt-5" data-aos="fade-up">
+        <div class="link-group mt-5 d-flex justify-content-center" data-aos="fade-up">
           <x-nav-link href="{{route('home')}}"> {{ __('Home') }}</x-nav-link>
           <div class="vr"></div>
           <x-nav-link href="{{route('home')}}"> {{ __('Services') }}</x-nav-link>
@@ -27,7 +27,7 @@
         </div>
         <hr class="text-muted my-4" />
   
-        <p>Copyright 2024 &gt; Hizo /&lt;  | All Rights Reserved.</p>
+        <p>Copyright 2024 &lt; Hizo /&gt;  | All Rights Reserved.</p>
       </footer>
       <!-- footer section ends here -->
   
