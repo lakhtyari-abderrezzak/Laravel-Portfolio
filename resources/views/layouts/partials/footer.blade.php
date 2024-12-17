@@ -1,51 +1,70 @@
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-        <h3 class="pt-4" data-aos="fade-up"> <x-application-logo /> </h3>
-        <div class="link-group mt-5 d-flex justify-content-center" data-aos="fade-up">
-          <x-nav-link href="{{route('home')}}"> {{ __('Home') }}</x-nav-link>
-          <div class="vr"></div>
-          <x-nav-link href="{{route('home')}}"> {{ __('Services') }}</x-nav-link>
-          <div class="vr"></div>
-          <x-nav-link href="{{route('home')}}"> {{ __('Portfolio') }} </x-nav-link>
-          <div class="vr"></div>
-          <x-nav-link href="{{route('home')}}"> {{ __('Testemonials') }}</x-nav-link>
-          <div class="vr"></div>
-          <x-nav-link href="{{route('home')}}"> {{ __('Blog') }}</x-nav-link>
-          <div class="vr"></div> 
-          <x-nav-link href="{{route('home')}}"> {{ __('Contact') }}</x-nav-link>
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Hizo</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+          </p>
         </div>
-        <div class="social-links mt-5" data-aos="fade-up">
-          <button href="" class="rounded-pill dribble">
-            <i class="bi bi-dribbble"></i>
-          </button>
-          <button href="" class="rounded-pill whatsapp">
-            <i class="bi bi-whatsapp"></i>
-          </button>
-          <button href="" class="rounded-pill behance">
-            <i class="bi bi-behance"></i>
-          </button>
+        <div class="box">
+          <ul class="links">
+            <li><a href="#">Important Link 1</a></li>
+            <li><a href="#">Important Link 2</a></li>
+            <li><a href="#">Important Link 3</a></li>
+            <li><a href="#">Important Link 4</a></li>
+            <li><a href="#">Important Link 5</a></li>
+          </ul>
         </div>
-        <hr class="text-muted my-4" />
-  
-        <p>Copyright 2024 &lt; Hizo /&gt;  | All Rights Reserved.</p>
-      </footer>
-      <!-- footer section ends here -->
-  
-        <!-- bootstrap javascript cdn link  -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"
-      ></script>
-  
-      <!-- AOS library javascript link  -->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        // initializing AOS library
-        AOS.init({
-          duration: 1000,
-          offset: 50,
-        });
-      </script>
-      <!-- custom js file linking -->
-      <script src="js/script.js"></script>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw"></i>
+            <div class="info">Business Hours: From 10:00 To 18:00</div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+353831119128</span>
+              <span>+212641277204</span>
+            </div>
+          </div>
+        </div>
+        <div class="box footer-gallery">
+          <img src="images/gallery-01.png" alt="" />
+          <img src="images/gallery-02.png" alt="" />
+          <img src="images/gallery-03.jpg" alt="" />
+          <img src="images/gallery-04.png" alt="" />
+          <img src="images/gallery-05.jpg" alt="" />
+          <img src="images/gallery-06.png" alt="" />
+        </div>
+      </div>
+      <p class="copyright">Made With Love <span>&lt;3</span> By Abdo </p>
+  </div>
+  <!-- End Footer -->
+
+
+  <!-- Start Up Button-->
+  <span class="go-up show"><i class="fas fa-angle-double-up fa-2x"></i></span>
+  <!-- End Up Button-->
+  <script src="{{asset('javascript/main.js')}}"></script>

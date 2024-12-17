@@ -1,3 +1,7 @@
 <x-app-layout>
-    <x-partials.landing wire:navigate />
+    <x-partials.setting-box />
+    
+    {{-- landing page --}}
+    <x-partials.landing />
+    
 </x-app-layout>

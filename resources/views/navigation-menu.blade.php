@@ -1,58 +1,36 @@
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          ><x-application-logo /></a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Home') }}
-                </x-nav-link>
-            </li>
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('About') }}
-                </x-nav-link>
-            </li>
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Services') }}
-                </x-nav-link>
-            </li>
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Portfolio') }}
-                </x-nav-link>
-            </li>
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Testemonials') }}
-                </x-nav-link>            
-            </li>
-            <li class="nav-item">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Blog') }}
-                </x-nav-link>            
-            </li>
-          </ul>
-        </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
+<!-- Start Header  -->
+<div class="header" id="header">
+  <div class="container">
+      <x-application-logo/>
+      <ul class="main-nav">
+          <li><a href="#articles">Articales</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li class="other-links">
+              <a href="#" >Other Links</a>
+          <!-- Start Megamenu -->
+          <ul class="mega-menu">
+              <div class="image">
+                  <img src="{{asset('images/megamenu.png')}}" alt="">
+              </div>
+              <ul class="links">
+                  <li><a href="#testemonials"><i class="far fa-comments fa-fw"></i>Testemonials</a></li>
+                  <li><a href="#team members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
+                  <li><a href="#services"><i class="far fa-building fa-fw"></i>Services</a></li>
+                  <li><a href="#our-skills"><i class="far fa-check-circle fa-fw"></i>Our Skills </a></li>
+                  <li><a href="#work-steps"><i class="far fa-clipboard fa-fw"></i>How Tt Works</a></li>
+              </ul> 
+              <ul class="links">
+                  <li><a href="#events"><i class="far fa-calendar-alt fa-fw"></i>Events</a></li>
+                  <li><a href="#pricing-plan"><i class="fa regular fa-server"></i>Pricing Plans</a></li>
+                  <li><a href="#videos"><i class="far fa-play-circle fa-fw"></i>Top Videos</a></li>
+                  <li><a href="#stats"><i class="far fa-chart-bar fa-fw"></i>Stats</a></li>
+                  <li><a href="#discount"><i class="far fa-percent fa-fw"></i>Request A Discount</a></li>
+              </ul>
+              </ul>
+          <!-- End Megamenu -->
+          </li>
+      </ul>
+  </div>
+</div>
+<!-- End Header  -->

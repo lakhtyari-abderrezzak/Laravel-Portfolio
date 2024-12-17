@@ -9,30 +9,15 @@
 
     <title>{{$title ?? ''}}{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-
-    <!-- bootstrap icon cdn link  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-
-    <!-- for adding animation to website we have use AOS library
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+        <!-- main css file -->
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+        <!-- Google Fonts #Cairo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
