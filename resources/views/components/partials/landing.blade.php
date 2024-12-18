@@ -2,16 +2,14 @@
     <div class="landing">
         <div class="container">
             <div class="text">
-                <h1 id="random-heading">Welcome To Our Website.</h1>
-                <p>Here iam gonna share my life, Books iam reading, Games iam playing, Stories and Events</p>
+                <h1 id="random-heading">Welcome to Abderrazzak Lakhtyari's Portfolio</h1>
+                <p>Hi, I’m Abderrazzak Lakhtyari, a passionate and experienced Full-Stack PHP Developer with expertise
+                    in building robust web applications using Laravel.</p>
             </div>
             <div class="image">
-                <img id="landing-img" src="images/landing-image.png" height="400" alt="">
+                <img id="landing-img" class="h-400" src="{{asset('images/landing-image.png')}}" alt="">
             </div>
-            
         </div>
-        <a class="go-down" href="#articles">
-                <i class="fas fa-angle-double-down fa-2x"></i>
-            </a>
+
     </div>
     <!-- End Landing  -->
