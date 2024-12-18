@@ -5,7 +5,6 @@
         </div>
         <div class="setting-container">
             <div class="option-box">
-                <h4>Colors</h4>
                 <ul class="colors-list">
                     <li class="active" data-color="#2196f3"></li>
                     <li data-color="#e91e63"></li>
