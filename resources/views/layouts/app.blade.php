@@ -32,6 +32,8 @@
 
     @include('layouts.partials.header')
     
+    <x-partials.setting-box />
+    
     <main>
       {{$slot}}
     </main>
