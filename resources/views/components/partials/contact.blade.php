@@ -8,7 +8,7 @@
                     technical advice, or just want to chat about web development, feel free to reach out. I’d love to
                     hear from you!
                 </p>
-                <img class='text-center' src="{{ asset('images/contact.png')}}" alt="contact" />
+                <img  src="{{ asset('images/contact.png')}}" alt="contact" />
             </div>
         </div>
         {{-- Conatct Form  --}}
