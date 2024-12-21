@@ -1,13 +1,12 @@
-<!-- Start Header  -->
-<div class="header" id="header">
+
   <div class="container">
       <x-application-logo/>
       <ul class="main-nav">
-          <li><a wire:navigate href="{{route('home')}}">Home</a></li>
+          <li><a href="{{route('home')}}">Home</a></li>
           <li><a href="{{ route('home') }}#contact">Contact</a></li>
-          <li><a wire:navigate href="#articles">Articles</a></li>
+          <li><a href="{{ route('home') }}#our-skills">Skills</a></li>
           <li class="other-links">
-              <a href="#" >Other Links</a>
+              <a>Other Links</a>
           <!-- Start Megamenu -->
           <ul class="mega-menu">
               <div class="image">
@@ -15,10 +14,9 @@
               </div>
               <ul class="links">
                   <li><a href="#testemonials"><i class="far fa-comments fa-fw"></i>Testemonials</a></li>
-                  <li><a wire:navigate href="{{ route('articles.index')}}"><i class="far fa-comments fa-fw"></i>Articles</a></li>
+                  <li><a href="{{ route('articles.index')}}"><i class="fa-regular fa-newspaper"></i>Articles</a></li>
                   <li><a href="#team members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
                   <li><a href="#services"><i class="far fa-building fa-fw"></i>Services</a></li>
-                  <li><a href="#our-skills"><i class="far fa-check-circle fa-fw"></i>Our Skills </a></li>
                   <li><a href="#work-steps"><i class="far fa-clipboard fa-fw"></i>How Tt Works</a></li>
               </ul> 
               <ul class="links">
@@ -33,5 +31,3 @@
           </li>
       </ul>
   </div>
-</div>
-<!-- End Header  -->
