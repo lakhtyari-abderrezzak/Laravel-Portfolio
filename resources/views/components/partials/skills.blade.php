@@ -11,7 +11,7 @@
                 <x-skill icon="react" name="React" percentage="80%" />
                 <x-skill icon="php" name="PHP" percentage="90%" />
                 <x-skill icon="laravel" name="Laravel" percentage="95%" />
-                <x-skill icon="mysql" name="Mysql" percentage="95%" />
+                <x-skill icon="server" name="Mysql" percentage="95%" />
             </div>
         </div>
         
