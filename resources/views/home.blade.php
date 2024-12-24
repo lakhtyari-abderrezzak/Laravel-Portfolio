@@ -9,13 +9,14 @@
         <h2 class="main-title">Services</h2>
         <x-partials.services />
     </div>
-    <div class="spikes"></div>
     <!-- End Services  -->
-    {{-- Testemonials --}}
     <x-partials.skills />
     <x-caroussel />
-
-    <div class="spikes"></div>
+    <div class="stats" id="stats">
+        <div class="main-title">Stats</div>
+        <x-partials.stats />
+    </div>
+    {{-- Testemonials --}}
     <livewire:testemonial-box />
     {{-- contact section  --}}
     <x-partials.contact />
