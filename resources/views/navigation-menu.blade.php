@@ -3,8 +3,9 @@
       <x-application-logo/>
       <ul class="main-nav">
           <li><a href="{{route('home')}}">Home</a></li>
-          <li><a href="{{ route('home') }}#contact">Contact</a></li>
+          <li><a href="{{ route('home') }}#about">About</a></li>
           <li><a href="{{ route('home') }}#our-skills">Skills</a></li>
+          <li><a href="{{ route('home') }}#contact">Contact</a></li>
           <li class="other-links">
               <a>Other Links</a>
           <!-- Start Megamenu -->
@@ -13,7 +14,7 @@
                   <img src="{{asset('images/megamenu.png')}}" alt="">
               </div>
               <ul class="links">
-                  <li><a href="#testemonials"><i class="far fa-comments fa-fw"></i>Testemonials</a></li>
+                  <li><a href="{{ route('home') }}#testemonials"><i class="far fa-comments fa-fw"></i>Testemonials</a></li>
                   <li><a href="{{ route('articles.index')}}"><i class="fa-regular fa-newspaper"></i>Articles</a></li>
                   <li><a href="#team members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
                   <li><a href="#services"><i class="far fa-building fa-fw"></i>Services</a></li>
