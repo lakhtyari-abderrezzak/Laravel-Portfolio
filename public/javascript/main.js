@@ -64,6 +64,9 @@ window.onscroll = function () {
         // console.log('We Are Here');
         statFunc();
     }
+
+    // calling Arrow function 
+    arrowFunction();
 };
 // Skills Function
 let ourSkills = document.querySelector(".our-skills");
@@ -91,4 +94,21 @@ function statFunc() {
             }
         }, duration);
     });
+}
+
+let SpanArrow = document.querySelector(".go-up");
+
+function arrowFunction (){
+
+    if (window.scrollY > 700){
+            SpanArrow.classList.add("show");
+        }else{
+            SpanArrow.classList.remove("show");
+        }
+        SpanArrow.onclick = function(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+    }
 }
