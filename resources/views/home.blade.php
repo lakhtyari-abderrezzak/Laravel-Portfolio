@@ -15,12 +15,12 @@
     <x-caroussel />
     {{-- Start Services --}}
     <div class="services" id="services">
-        <h2 class="main-title">Services</h2>
+        <h2 class="main-title">{{ __('global.services.title') }}</h2>
         <x-partials.services />
     </div>
     {{-- Statistics  --}}
     <div class="stats" id="stats">
-        <h1 class="main-title">Stats</h1>
+        <h1 class="main-title">{{ __('global.stats.title') }}</h1>
         <x-partials.stats />
     </div>
     {{-- contact section  --}}
