@@ -1,8 +1,8 @@
 <div class="container">
-    <x-service name="Frontend Development" img='frontend.jpg'/>
-    <x-service name="Backend Development" img='back end.jpg'/>
-    <x-service name="Full-Stack Development" img='fullstack.png'/>
-    <x-service name="Performance Optimization" img='performance.jpg'/>
-    <x-service name="Maintenance & Support" img='support.jpg'/>
-    <x-service name="Consultation & Strategy" img='consulting.jpg'/>
+    <x-service name="{{ __('global.services.first') }}" img='frontend.jpg'/>
+    <x-service name="{{ __('global.services.second') }}" img='back end.jpg'/>
+    <x-service name="{{ __('global.services.third') }}" img='fullstack.png'/>
+    <x-service name="{{ __('global.services.fourth') }}" img='performance.jpg'/>
+    <x-service name="{{ __('global.services.fifth') }}" img='support.jpg'/>
+    <x-service name="{{ __('global.services.sixth') }}" img='consulting.jpg'/>
 </div>
