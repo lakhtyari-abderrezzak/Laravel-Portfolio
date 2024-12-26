@@ -12,6 +12,12 @@ return [
         'fifth' => 'Performance Optimization',
         'fourth' => 'Maintenance and Support',
         'sixth' => 'Consultation and Strategy',
+    ],
+    'stats' => [
+        'title' => 'Stats',
+        'client' => 'Clients',
+        'projects' => 'Projects',
+        'money' => 'Money',
+        'countries' => 'Countries',
     ]
-
 ];
