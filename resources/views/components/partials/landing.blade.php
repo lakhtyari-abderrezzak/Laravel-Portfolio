@@ -2,12 +2,11 @@
     <div class="landing">
         <div class="container">
             <div class="text">
-                <h1 id="random-heading">Welcome to Abderrazzak Lakhtyari's Portfolio</h1>
-                <p>Hi, I’m Abderrazzak Lakhtyari, a passionate and experienced Full-Stack PHP Developer with expertise
-                    in building robust web applications using Laravel.</p>
+                <h1 id="random-heading">{{ __('landing.header') }}</h1>
+                <p>{{ __('landing.description') }}</p>
                 <div class="btn">
                     <i class="fa-solid fa-download"></i>
-                    <a href="{{asset('resume/full-stack-resume.pdf')}}" download="Abderrazzak-Lakhtyari.pdf" class="download-btn">Download CV</a>
+                    <a href="{{asset('resume/full-stack-resume.pdf')}}" download="Abderrazzak-Lakhtyari.pdf" class="download-btn"> {{ __('landing.btn') }} </a>
                 </div>
             </div>
             <div class="image">
