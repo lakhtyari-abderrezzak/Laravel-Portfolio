@@ -7,7 +7,7 @@
                     in building robust web applications using Laravel.</p>
                 <div class="btn">
                     <i class="fa-solid fa-download"></i>
-                    <a href="resume/full-stack-resume.pdf" download="Abderrazzak-Lakhtyari.pdf" class="download-btn">Download CV</a>
+                    <a href="{{asset('resume/full-stack-resume.pdf')}}" download="Abderrazzak-Lakhtyari.pdf" class="download-btn">Download CV</a>
                 </div>
             </div>
             <div class="image">
