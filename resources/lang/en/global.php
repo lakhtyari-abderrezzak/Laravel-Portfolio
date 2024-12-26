@@ -10,8 +10,8 @@ return [
         'second' => 'Backend Development',
         'third' => 'Full-Stack Development',
         'fifth' => 'Performance Optimization',
-        'fourth' => 'Maintenance & Support',
-        'sixth' => 'Consultation & Strategy',
+        'fourth' => 'Maintenance and Support',
+        'sixth' => 'Consultation and Strategy',
     ]
 
 ];
