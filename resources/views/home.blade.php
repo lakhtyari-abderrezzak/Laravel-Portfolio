@@ -6,7 +6,7 @@
     <x-partials.about />
     {{-- Projects Section  --}}
     <section id="projects" class="projects">
-        <h2 class="main-title">My Projects</h2>
+        <h2 class="main-title">{{ __('projects.title' )}}</h2>
         <x-partials.projects />
     </section>
     {{-- Skills  --}}
