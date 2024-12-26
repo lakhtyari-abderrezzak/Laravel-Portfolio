@@ -1,6 +1,6 @@
     <!-- Start Skills -->
     <div class="our-skills" id="our-skills">
-        <h2 class="main-title">Skills</h2>
+        <h2 class="main-title">{{ __('global.skills.title') }}</h2>
         <div class="container">
             <img src="{{ asset('images/skills.png') }}" alt="skills image">
             <div class="skills">
