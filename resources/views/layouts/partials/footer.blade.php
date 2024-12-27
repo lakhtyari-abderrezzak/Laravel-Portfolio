@@ -20,9 +20,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="text">
-
-                </p>
+                <x-lang-switcher />
             </div>
             <div class="box">
                 <ul class="links">
