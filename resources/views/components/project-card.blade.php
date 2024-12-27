@@ -4,6 +4,6 @@
     <div class="project-info">
       <h3 class="project-title">{{ $title }}</h3>
       <p class="project-description">{{ $description }}</p>
-      <a href="{{$github}}" target="_blank" class="project-link">View on GitHub</a>
+      <a href="{{$github}}" target="_blank" class="project-link"> {{__('projects.git')}} </a>
     </div>
   </div>
