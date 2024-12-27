@@ -26,21 +26,21 @@
             </div>
             <div class="box">
                 <ul class="links">
-                    <li><a href="#landing">Home</a></li>
-                    <li><a href="#skills">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#our-skills">Skills</a></li>
+                    <li><a href="#landing">{{ __('nav.home') }}</a></li>
+                    <li><a href="#about">{{ __('nav.about') }}</a></li>
+                    <li><a href="#projects">{{ __('nav.projects') }}</a></li>
+                    <li><a href="#services">{{ __('nav.services') }}</a></li>
+                    <li><a href="#our-skills">{{ __('nav.skills') }}</a></li>
                 </ul>
             </div>
             <div class="box">
                 <div class="line">
                     <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info">Dublin, Co Dublin, Ireland</div>
+                    <div class="info">{{ __('global.footer.address') }}</div>
                 </div>
                 <div class="line">
                     <i class="far fa-clock fa-fw"></i>
-                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                    <div class="info">{{ __('global.footer.business-hours') }}</div>
                 </div>
                 <div class="line">
                     <i class="fas fa-phone-volume fa-fw"></i>
@@ -51,7 +51,7 @@
             </div>
             <!-- Google Map Embed -->
             <div class="footer-map">
-                <h3>Our Location</h3>
+                <h3>{{ __('global.footer.location') }}</h3>
                 <!-- Embed Google Map -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.3303996974487!2d-6.248410584264696!3d53.349805380158975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5b3e4b9450f1%3A0x0f5146489d944b1e!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sus!4v1634814889600!5m2!1sen!2sus"
@@ -59,7 +59,7 @@
 
             </div>
         </div>
-        <p class="copyright">Made With Love <span>&lt;3</span> By Abdo </p>
+        <p class="copyright">{{ __('global.footer.copyright') }} &copy; </p>
     </div>
     <!-- End Footer -->
 
