@@ -2,39 +2,38 @@
 
 return [
     'skills' => [
-        'title' => 'Skills',
+        'title' => 'Compétences',
     ],
     'services' => [
         'title' => 'Services',
-        'first' => 'Frontend Development',
-        'second' => 'Backend Development',
-        'third' => 'Full-Stack Development',
-        'fifth' => 'Performance Optimization',
-        'fourth' => 'Maintenance and Support',
-        'sixth' => 'Consultation and Strategy',
+        'first' => 'Développement Frontend',
+        'second' => 'Développement Backend',
+        'third' => 'Développement Full-Stack',
+        'fifth' => 'Optimisation des Performances',
+        'fourth' => 'Maintenance et Support',
+        'sixth' => 'Consultation et Stratégie',
     ],
     'stats' => [
-        'title' => 'Stats',
+        'title' => 'Statistiques',
         'client' => 'Clients',
-        'projects' => 'Projects',
-        'money' => 'Money',
-        'countries' => 'Countries',
+        'projects' => 'Projets',
+        'money' => 'Argent',
+        'countries' => 'Pays',
     ],
     'contact' => [
-        'title-side' => 'Get In Touch',
-        'description' => "I'm always open to new opportunities and collaborations. Whether you have a project in mind, need technical advice, or just want to chat about web development, feel free to reach out. I’d love to hear from you!",
-        'title' => 'Contact Me',
-        'name' => 'Enter Your Name',
-        'email' => 'Enter Your Email',
-        'number' => 'Enter Your Phone',
-        'message' => 'Tell Us About Your Needs ?',
-        'submit' => 'Submit',
+        'title-side' => 'Contactez-nous',
+        'description' => "Je suis toujours ouvert aux nouvelles opportunités et collaborations. Que vous ayez un projet en tête, besoin de conseils techniques, ou juste envie de discuter du développement web, n'hésitez pas à me contacter. J'aimerais avoir de vos nouvelles !",
+        'title' => 'Contactez-moi',
+        'name' => 'Entrez votre nom',
+        'email' => 'Entrez votre e-mail',
+        'number' => 'Entrez votre téléphone',
+        'message' => 'Parlez-nous de vos besoins ?',
+        'submit' => 'Envoyer',
     ],
     'footer' => [
-        'location' => 'Our Location',
-        'copyright' => 'Made With Love By Abdo',
-        'business-hours' => 'Business Hours: From 10:00 To 18:00',
-        'address' => 'Dublin, Co Dublin, Ireland'
+        'location' => 'Notre emplacement',
+        'copyright' => 'Fait avec amour par Abdo',
+        'business-hours' => 'Heures d\'ouverture : De 10:00 à 18:00',
+        'address' => 'Dublin, Comté de Dublin, Irlande'
     ]
-    
 ];
