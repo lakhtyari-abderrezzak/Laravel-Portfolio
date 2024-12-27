@@ -1,6 +1,6 @@
 <!-- Start testimonials -->
 <div wire:model.live class="testemonials" id="testemonials">
-    <h2 class="main-title">testimonials</h2>
+    <h2 class="main-title"> {{ __('global.testemonials.title') }} </h2>
     <div class="container">
         @foreach ($this->testemonials as $testemony)
             <div class="box">
