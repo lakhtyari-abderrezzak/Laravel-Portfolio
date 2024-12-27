@@ -35,6 +35,9 @@ return [
         'copyright' => 'Made With Love By Abdo',
         'business-hours' => 'Business Hours: From 10:00 To 18:00',
         'address' => 'Dublin, Co Dublin, Ireland'
+    ],
+    'testemonials' => [
+        'title' => 'Testemonials'
     ]
     
 ];

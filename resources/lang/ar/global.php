@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     'skills' => [
@@ -35,5 +35,9 @@ return [
         'copyright' => 'صُنع بحب بواسطة عبدو',
         'business-hours' => 'ساعات العمل: من 10:00 إلى 18:00',
         'address' => 'دبلن، مقاطعة دبلن، أيرلندا'
+    ],
+    'testemonials' => [
+        'title' => 'الشهادات'
     ]
+
 ];

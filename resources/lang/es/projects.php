@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Proyectos',
+    'git' => 'Ver en Github',
     'first-project' => [
         'title' => "Sitio Web de Blog",
         'description' => "Sitio web de Blog con Laravel Livewire."

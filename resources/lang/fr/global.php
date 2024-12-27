@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     'skills' => [
@@ -35,5 +35,9 @@ return [
         'copyright' => 'Fait avec amour par Abdo',
         'business-hours' => 'Heures d\'ouverture : De 10:00 à 18:00',
         'address' => 'Dublin, Comté de Dublin, Irlande'
+    ],
+    'testemonials' => [
+        'title' => 'Témoignages'
     ]
+
 ];
