@@ -17,8 +17,6 @@
                                 class="far fa-comments fa-fw"></i>{{ __('nav.testemonials') }}</a></li>
                     <li><a href="{{ route('home') }}#stats"><i
                                 class="far fa-chart-bar fa-fw"></i>{{ __('nav.stats') }}</a></li>
-                    <li><a href="{{ route('articles.index') }}"><i
-                                class="fa-regular fa-newspaper"></i>{{ __('nav.articles') }}</a></li>
                     <li><a href="{{ route('home') }}#services"><i
                                 class="far fa-building fa-fw"></i>{{ __('nav.services') }}</a></li>
                     <li><a href="{{ route('home') }}#contact"><i
