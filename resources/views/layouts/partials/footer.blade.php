@@ -2,7 +2,9 @@
     <div class="footer">
         <div class="container">
             <div class="box">
-                <h3> &lt; Hizo /&gt; </h3>
+                <div class="logo">
+                    <x-application-logo />
+                </div>
                 <ul class="social">
                     <li>
                         <a href="#" class="facebook">
