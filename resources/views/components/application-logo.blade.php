@@ -1,4 +1,4 @@
-<div class="text-gray-800 font-semibold">
-  <span class="text-yellow-500 text-xl logo">&lt;Hizo /&gt;</span>
+<div class="logo">
+  <img src="{{asset('images/logo/logo-abdo.png')}}" alt="logo">
 </div>
 
