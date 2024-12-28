@@ -225,12 +225,15 @@ a {
     position: relative;
 }
 .header .logo {
-    color: var(--main-color);
-    font-size: 2rem;
     height: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header .logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 @media (max-width: 767px) {
     .header .logo {
@@ -250,6 +253,9 @@ a {
     opacity: 1;
     z-index: 100;
     top: calc(100% + 1px);
+}
+.header .main-nav .other-links a {
+    cursor: pointer;
 }
 .header .main-nav > li > a {
     display: flex;
@@ -1768,11 +1774,8 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
-.footer .box h3 {
-    color: var(--main-color);
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0 0 10px;
+.footer .box .logo {
+    margin-bottom: 15px;
 }
 .footer .box .social {
     display: flex;
