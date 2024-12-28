@@ -18,8 +18,6 @@ Route::get('/lang/{locale}', function ($locale) {
     return redirect()->back();  // Redirect back to the previous page
 });
 
-Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
-Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
 
 // Contact Form Submition Route
 
