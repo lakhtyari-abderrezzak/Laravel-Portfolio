@@ -9,7 +9,7 @@ services:
       composer install --no-dev --optimize-autoloader
       
       # Install Node.js dependencies and build assets
-      npm install && npm run build
+      npm install && npm run prod
 
       # Clear and cache configurations
       php artisan config:cache
@@ -40,7 +40,6 @@ services:
         value: "{{ database.user }}"
       - key: DB_PASSWORD
         value: "{{ database.password }}"
-
     plan: free
 
 databases:
