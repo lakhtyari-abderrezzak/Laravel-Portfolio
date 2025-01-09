@@ -4,13 +4,13 @@ services:
   - type: web
     name: laravel-portfolio
     env: php
-    region: oregon # Change this to your preferred region (e.g., frankfurt, singapore)
+    region: Dublin # Change this to your preferred region (e.g., frankfurt, singapore)
     buildCommand: |
       # Install Composer dependencies
       composer install --no-dev --optimize-autoloader
       
       # Install Node.js dependencies and build assets
-      npm install && npm run prod
+      npm install && npm run build
 
       # Clear and cache configurations
       php artisan config:cache
@@ -30,7 +30,7 @@ services:
       - key: APP_URL
         value: https://laravel-portfolio.onrender.com
       - key: DB_CONNECTION
-        value: pgsql
+        value: mysql
       - key: DB_HOST
         value: {{ database.internal_connection.host }}
       - key: DB_PORT
@@ -45,9 +45,9 @@ services:
       name: persistent-storage
       mountPath: /var/www/html/storage
     plan: free
-    phpVersion: 8.1 # Specify the PHP version you want to use
+    phpVersion: 8.2.12 # Specify the PHP version you want to use
 
 databases:
-  - name: portfolio-db
+  - name: Laravel_Portfolio
     plan: free
-    region: oregon # Match your service's region
+    region: dublin # Match your service's region
