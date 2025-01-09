@@ -32,15 +32,15 @@ services:
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
-        value: {{ database.internal_connection.host }}
+        value: "{{ database.internal_connection.host }}"
       - key: DB_PORT
-        value: {{ database.internal_connection.port }}
+        value: "{{ database.internal_connection.port }}"
       - key: DB_DATABASE
-        value: {{ database.name }}
+        value: "{{ database.name }}"
       - key: DB_USERNAME
-        value: {{ database.user }}
+        value: "{{ database.user }}"
       - key: DB_PASSWORD
-        value: {{ database.password }}
+        value: "{{ database.password }}"
     disk:
       name: persistent-storage
       mountPath: /var/www/html/storage
