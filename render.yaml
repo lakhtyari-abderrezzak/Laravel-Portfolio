@@ -1,0 +1,53 @@
+# render.yaml for Laravel Portfolio Application
+
+services:
+  - type: web
+    name: laravel-portfolio
+    env: php
+    region: oregon # Change this to your preferred region (e.g., frankfurt, singapore)
+    buildCommand: |
+      # Install Composer dependencies
+      composer install --no-dev --optimize-autoloader
+      
+      # Install Node.js dependencies and build assets
+      npm install && npm run prod
+
+      # Clear and cache configurations
+      php artisan config:cache
+      php artisan route:cache
+      php artisan view:cache
+
+      # Set up symbolic link for storage
+      php artisan storage:link
+    startCommand: php artisan serve --host 0.0.0.0 --port 8080
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        sync: false # Add your application key manually in Render Dashboard
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://laravel-portfolio.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        value: {{ database.internal_connection.host }}
+      - key: DB_PORT
+        value: {{ database.internal_connection.port }}
+      - key: DB_DATABASE
+        value: {{ database.name }}
+      - key: DB_USERNAME
+        value: {{ database.user }}
+      - key: DB_PASSWORD
+        value: {{ database.password }}
+    disk:
+      name: persistent-storage
+      mountPath: /var/www/html/storage
+    plan: free
+    phpVersion: 8.1 # Specify the PHP version you want to use
+
+databases:
+  - name: portfolio-db
+    plan: free
+    region: oregon # Match your service's region
