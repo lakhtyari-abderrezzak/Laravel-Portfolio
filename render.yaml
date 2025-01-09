@@ -45,7 +45,6 @@ services:
       name: persistent-storage
       mountPath: /var/www/html/storage
     plan: free
-    phpVersion: 8.2
 
 databases:
   - name: Laravel_Portfolio
