@@ -3,7 +3,6 @@
 services:
   - type: web
     name: laravel-portfolio
-    env: php
     region: Dublin # Change this to your preferred region (e.g., frankfurt, singapore)
     buildCommand: |
       # Install Composer dependencies
