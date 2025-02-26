@@ -1,0 +1,31 @@
+name: Deploy and Migrate Laravel App
+
+on:
+  push:
+    branches:
+      - main  # or the branch you use for production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+
+      - name: Install dependencies
+        run: |
+          composer install --no-interaction --prefer-dist
+
+      - name: Run migrations
+        run: php artisan migrate --force
+
+      - name: Deploy to Railway
+        uses: railwayapp/railway-action@v1
+        with:
+          railway-token: ${{ secrets.RAILWAY_API_TOKEN }}
