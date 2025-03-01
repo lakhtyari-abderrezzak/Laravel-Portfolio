@@ -1,0 +1,6 @@
+build:
+  - composer install --no-dev --optimize-autoloader
+  - php artisan migrate --force
+deploy:
+  - php artisan config:cache
+  - php artisan route:cache
